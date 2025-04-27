@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBites Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="brand">
+                    <h1>Fresh<span>Bites</span></h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Delicious Food For Every Mood</h2>
+                <p>Experience the art of fine dining with our chef's special creations</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn primary-btn">View Menu</a>
+                    <a href="#contact" class="btn secondary-btn">Book a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specialties" class="specialties">
+        <div class="container">
+            <div class="section-title">
+                <span>What makes us special</span>
+                <h2>Our Specialties</h2>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-item">
+                    <div class="specialty-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We source the freshest local ingredients daily to ensure quality and flavor in every dish.</p>
+                </div>
+                <div class="specialty-item">
+                    <div class="specialty-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Expert Chefs</h3>
+                    <p>Our world-class chefs bring years of culinary expertise to create extraordinary dishes.</p>
+                </div>
+                <div class="specialty-item">
+                    <div class="specialty-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Award Winning</h3>
+                    <p>Recognized with multiple awards for our exceptional cuisine and service.</p>
+                </div>
+                <div class="specialty-item">
+                    <div class="specialty-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Friendly Service</h3>
+                    <p>Our attentive staff ensures a memorable dining experience every time you visit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-title">
+                <span>Delicious options</span>
+                <h2>Our Menu</h2>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="menu-category active" data-category="all">All</button>
+                <button class="menu-category" data-category="appetizers">Appetizers</button>
+                <button class="menu-category" data-category="mains">Main Course</button>
+                <button class="menu-category" data-category="desserts">Desserts</button>
+                <button class="menu-category" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item" data-type="appetizers">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Bruschetta</h3>
+                            <span class="price">$8.95</span>
+                        </div>
+                        <p>Toasted bread topped with tomatoes, fresh basil, garlic, and olive oil</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-type="appetizers">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Calamari Fritti</h3>
+                            <span class="price">$12.95</span>
+                        </div>
+                        <p>Crispy fried calamari served with lemon and marinara sauce</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-type="mains">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Grilled Salmon</h3>
+                            <span class="price">$24.95</span>
+                        </div>
+                        <p>Atlantic salmon with lemon herb butter, served with seasonal vegetables</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-type="mains">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Filet Mignon</h3>
+                            <span class="price">$32.95</span>
+                        </div>
+                        <p>8oz tenderloin steak grilled to perfection with garlic mashed potatoes</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-type="desserts">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Tiramisu</h3>
+                            <span class="price">$9.95</span>
+                        </div>
+                        <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-type="desserts">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Chocolate Lava Cake</h3>
+                            <span class="price">$10.95</span>
+                        </div>
+                        <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-type="drinks">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Signature Cocktail</h3>
+                            <span class="price">$12.95</span>
+                        </div>
+                        <p>House specialty with premium spirits, fresh fruit, and herbs</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-type="drinks">
+                    <div class="menu-item-image"></div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Craft Beer Selection</h3>
+                            <span class="price">$7.95</span>
+                        </div>
+                        <p>Rotating selection of local and international craft beers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image"></div>
+                <div class="about-text">
+                    <div class="section-title">
+                        <span>Our story</span>
+                        <h2>About FreshBites</h2>
+                    </div>
+                    <p>Founded in 2015 by acclaimed chef Michael Rossi, FreshBites has quickly become one of the city's most beloved dining destinations. What started as a small family restaurant has grown into a culinary landmark known for its innovative approach to classic cuisine.</p>
+                    <p>Our philosophy is simple: use the finest ingredients, prepare them with care, and serve them with passion. We believe that great food brings people together, and we're committed to creating memorable experiences for our guests.</p>
+                    <a href="#contact" class="btn primary-btn">Reserve Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <span>Visual experience</span>
+                <h2>Our Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <span>What our customers say</span>
+                <h2>Testimonials</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The best dining experience I've had in years. The food was exceptional and the service impeccable. Can't wait to come back!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image"></div>
+                        <div class="author-info">
+                            <h4>Emily Johnson</h4>
+                            <p>Food Critic</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"FreshBites has become our family's favorite restaurant. The menu offers something for everyone, and the quality is consistently outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image"></div>
+                        <div class="author-info">
+                            <h4>James Wilson</h4>
+                            <p>Local Resident</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As someone with dietary restrictions, I appreciate how accommodating the staff is. They made me feel valued as a customer while serving incredible food."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image"></div>
+                        <div class="author-info">
+                            <h4>Sophia Chen</h4>
+                            <p>Frequent Diner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <span>Get in touch</span>
+                <h2>Contact & Reservations</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>123 Culinary Avenue, Gourmet District, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>Monday-Friday: 11:00 AM - 10:00 PM</p>
+                            <p>Saturday-Sunday: 10:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Reservations</h3>
+                            <p>+1 (555) 123-4567</p>
+                            <p>reservations@freshbites.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <h3>Book a Table</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Party Size</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5+ People</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Reserve Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Fresh<span>Bites</span></h3>
+                    <p>Where every flavor tells a story</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers and updates</p>
+                    <form>
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FreshBites Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav ul').classList.toggle('active');
+        });
+        
+        // Menu filtering
+        const categoryButtons = document.querySelectorAll('.menu-category');
+        const menuItems = document.querySelectorAll('.menu-item');
+        
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const category = button.getAttribute('data-category');
+                
+                // Show all items if 'all' is selected, otherwise filter
+                menuItems.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-type') === category) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
